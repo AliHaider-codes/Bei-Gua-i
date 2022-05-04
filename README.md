@@ -1,1 +1,1 @@
-# Bei-Gua-i
+# [Bei Gua-i](https://beiguai.netlify.app/)
