@@ -1,13 +1,13 @@
 let currNode = null;
 
 function initialize_tree(){
-    let node1 = new BinaryTreeNode("Finale 4", "", "", null, null);
+    let node1 = new BinaryTreeNode("Torna quando vuoi.", "", "", null, null);
     let node2 = new BinaryTreeNode("Finale 3", "", "", null, null);
-    let node3 = new BinaryTreeNode("Domanda 3", "Oui", "Nou", node2, node1);
-    let node4 = new BinaryTreeNode("Finale 1", "", "", null, null);
-    let node5 = new BinaryTreeNode("Finale 2", "", "", null, null);
-    let node6 = new BinaryTreeNode("Domanda 2", "Yes", "No!", node4, node5);
-    return new BinaryTree("Domanda 1", "Si", "No", node6, node3);
+    let node3 = new BinaryTreeNode("Con una serie di scelte determinerai il futuro della Liguria e delle zone circostanti. Sarai capace di salvare la città?", "Si", "No", node6, node1);
+    let node4 = new BinaryTreeNode("Buona idea! Per cominciare, abbiamo chiesto di prelevare campioni di 10 Kg, per un totale di 250 Kg di terreno. Se sei d’accordo possiamo procedere!", "Si", "No", null, null);
+    let node5 = new BinaryTreeNode("Sicuro? Il titanio è il metallo più resistente al mondo! Inoltre, serve nel settore dell’elettronica, nell’industria aerospaziale e per le protesi. Che ne pensi di chiedere alla Liguria la possibilità di prelevare dei campioni sul luogo, poi vediamo.", "Si", "No", null, null);
+    let node6 = new BinaryTreeNode("Vi è la possibilità di estrarre titanio nelle aree del Beigua, materiale resistente alle alte temperature e alla corrosione. Vuoi prenderlo?", "Si", "No", node4, node5);
+    return new BinaryTree("Partiamo?", "Si", "No", node6, node3);
 }
 
 function Play() {
